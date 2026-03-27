@@ -45,7 +45,8 @@ function Signup() {
 
       console.log("Sending Signup Data:", data);
 
-      const res = await API.post("/auth/signup", data);
+      // const res = await API.post("/auth/signup", data);
+      await API.post("/auth/signup", data);
 
       alert("Signup Successful ✅");
       navigate("/login");
